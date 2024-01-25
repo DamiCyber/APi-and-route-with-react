@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: montserrat;
+  }
+  nav {
+    z-index: 11111;
+    position:relative;
+    background-color: black;
+    height: 90px;
+    width: 100%;
+  }
+  label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 90px;
+    padding: 10px;
+    font-weight: bold;
+  }
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 2px 6px;
+    border-radius: 3px;
+  }
+  .logo img {
+    width: 100px;
+  }
+  .checkbtn {
+    font-size: 10px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-left: 130px;
+    cursor: pointer;
+    display: none;
+  }
+  .checkbtn img{
+    margin-top: 53px;
+    width: 50px;
+  }
+  #check {
+    display: none;
+  }
+  .btn{
+     padding: 8px;
+     border-radius: 6px;
+     border: none;
+     background-color: black;
+     color: white;
+     cursor: pointer;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  @media (max-width: 952px) {
+    label.logo {
+      font-size: 30px;
+      padding-left: 30px;
+    }
+    nav ul li a {
+      color: black ;
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px) {
+   
+    .checkbtn {
+    
+      border-radius: 50%;
+      display: block;
+    }
+  
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background:white;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+    }
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a {
+      color: black;
+      font-size: 20px;
+    }
+    #check:checked ~ ul {
+      left: 0;
+    }
+  }
+  @media (max-width: 325px) {
+   
+    .checkbtn {
+      width: 70px !important;
+      height: 30px !important;
+      border-radius: 50%;
+      display: block;
+    }
+  .text{
+    font-size: 28px !important;
+  }
+  .sip{
+    width: 240px;
+  }
+  .hero-section img{
+    width:300px !important;
+  }
+  .btn2{
+    border: none;
+   margin-bottom: 15px;
+  }
+  .box1{
+   display: none;
+   
+  }
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background:white;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+    }
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a {
+      color: black;
+      font-size: 20px;
+    }
+    #check:checked ~ ul {
+      left: 0;
+    }
+  }
+  
